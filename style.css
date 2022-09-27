@@ -19,9 +19,7 @@ main{
     justify-content: center;
     align-items: center;
 }
-.blue{
-    background-color: rgba(73, 166, 233, 0.5);
-}
+
 .modul-project{
     background-color: white;
     position: fixed;
@@ -31,6 +29,9 @@ main{
     flex-direction: column;
     border-radius: 15px;
     z-index: 1;
+}
+.blue {
+    background-color: rgba(73, 166, 233, 0.5);
 }
 .modul-project span{
     font-size: 6em;
