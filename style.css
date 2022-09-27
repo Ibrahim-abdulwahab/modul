@@ -11,8 +11,6 @@ html {
 .hero {
     min-height: 100vh;
     background: url("hero.jpeg") center/cover no-repeat;
-    display: grid;
-    place-items: center;
 }
 main{
     width: 100vw;
@@ -26,16 +24,86 @@ main{
 }
 .modul-project{
     background-color: white;
+    position: fixed;
     width: 620px;
     height: 38%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    border-radius: 15px;
+    z-index: 1;
 }
 .modul-project span{
     font-size: 6em;
     letter-spacing: 2px;
     font-weight: 700;
     color: rgb(4, 4, 63);
+    width:100%;
+    height: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.btn{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn button{
+    width:161px;
+    height: 32.8px;
+    border-radius: 5px;
+    letter-spacing: 4px;
+    color: white;
+    background-color:blue ;
+    border:none;
+    transition: 1.2s;
+}
+.btn button:hover{
+    background-color: white;
+    color: blue;
+    border: solid;
+    border-color: blue;
+    cursor: pointer;
+}
+.modal-content {
+    background-color: white;
+    width: 620px;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    z-index: 9;
+    padding-top: 15px;
+    padding-bottom: 90px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+.none{
+    display: none;
+}
+.modal-content span{
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 2.7em;
+    letter-spacing: 4px;
+    font-weight: 700;
+    color: rgb(4, 4, 63);
+}
+.close {
+    height: fit-content;
+    color: hsl(360, 67%, 44%);
+    background: none;
+    border: none;
+    font-size: 3rem;
+    transition: all 0.3s linear;
+    align-self: flex-end;
+}
+.close:hover{
+    color:rgb(223, 86, 86);
+    transform: scale(1.5);
+    cursor: pointer;
 }
